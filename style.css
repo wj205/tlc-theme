@@ -1,0 +1,406 @@
+/*
+Theme Name: LearningWPTheme
+Author: Will Jeffers
+Version: 1.0
+*/
+
+body{
+	margin: 0;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
+	height: 100%;
+	min-height: 100%;
+}
+
+p{
+	line-height: 1.65em;
+}
+
+a:link,
+a:visited{
+	color:#333;
+}
+
+/* General Layout*/
+div.container{
+	height: 100%;
+	min-height: 100%;
+	max-width: 920px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+article.post{
+	border-bottom: 1px solid #D4AF37;
+	margin-bottom: 20px;
+}
+
+article.post:last-of-type{
+	border-bottom: none;
+}
+
+/* Aside Styles */
+article.post-aside, 
+article.post-link {
+	font-size: 125%;
+	background-color: #fff5cb;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+	border-bottom: none;
+}
+
+.mini-meta {
+	font-size: 68%;
+	margin-bottom: -20px;
+	color: #777;
+}
+
+/* Link Post Format Styles */
+article.post-link {
+	padding: 0;
+	background-color: #e0ebff;
+}
+
+article.post-link a {
+	display: block;
+	padding: 20px;
+}
+
+/* Post Format Gallery Styles */
+article.post-gallery {
+	background-color: #222;
+	color: #fff;
+	padding: 20px;
+}
+
+article.post-gallery img {
+	border: none!important;
+}
+
+article.post-gallery h2 {
+	text-align: center;
+}
+
+/* Header */
+.site-header{
+	margin: 0 auto;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.site-header h1, .site-header h1 a:link, .site-header h1 a:visited {
+	margin: 0;
+	padding-bottom: 40px;
+	font-size: 2.5em;
+	text-decoration: none;
+	font-family: 'EB Garamond', Arial, sans-serif;
+	text-transform: lowercase;
+}
+
+.site-header h5 {
+	margin-top: 0;
+	font-size: 1.1em;
+}
+
+/* Header Search */
+div.hd-search {
+	margin: 0 auto;
+	text-align: right;
+	width: 920px;
+	padding: 30px 0 0 0;
+}
+
+div.hd-search label {
+	position: absolute;
+	left: -9999px;
+}
+
+div.hd-search #searchsubmit {
+	background-color: #333;
+	color: #eee;
+	padding: 5px 14px;
+	border: none;
+	vertical-align: top;
+}
+
+div.hd-search #s {
+	vertical-align: top;
+	padding: 3px 0;
+}
+
+/* Site Header Menu */
+.site-header nav ul{
+	/*border-bottom: 2px solid #999;*/
+	font-size: 0;
+	margin: 10px auto 0 auto;
+	padding: 10px 0;
+}
+
+.site-header nav ul li {
+	font-size: 14px;
+	display: inline-block;
+	border-right: 1px solid #999;
+	padding: 0 30px;
+}
+
+.site-header nav ul li:last-of-type{
+	border-right: none;
+}
+
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited {
+	display: block;
+	padding: 0 0;
+	margin: 0;
+	/*Possible border:
+	border: 1px solid #BBB;
+	border-radius: 5px;
+	*/
+	text-decoration: none;
+}
+
+.site-header nav ul li a:hover {
+	/*background-color: #eee;*/
+	color:#999;
+}
+
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited,
+.site-header nav ul li.current-page-ancestor a:link,
+.site-header nav ul li.current-page-ancestor a:visited {
+	/*background-color: #333;*/
+	color:#333;
+	border-bottom: 1px solid #999;
+}
+
+/* Main Column */
+.main-column {
+	width: 66%;
+	float: left;
+}
+
+/* Side Column */
+.secondary-column {
+	text-align: center;
+	width: 30%;
+	float: right;
+	/*border-top: 2px solid #ccc;
+	border-left: 2px solid #ccc;
+	background-color: #eee;*/
+}
+
+.secondary-column div {
+	text-align: center;
+	border-bottom: 1px solid #D4AF37;
+}
+
+.secondary-column div:last-of-type {
+	border-bottom: none;
+}
+
+.secondary-column h1 {
+	font-size: 30px;
+}
+
+.secondary-column p {
+	line-height: 1em;
+}
+
+.secondary-column ul {
+	text-align: justify;
+	list-style: none;
+	padding-left: 10px;
+}
+
+.secondary-column a:link,
+.secondary-column a:visited {
+	text-decoration: none;
+}
+
+.cat-item a:link,
+.cat-item a:visited {
+	color: #999;
+}
+
+.secondary-column a:hover{
+	color: #333;
+}
+
+.widget_calendar {}
+#wp-calendar {width: 100%; }
+#wp-calendar caption { text-align: center; color: #333; font-size: 12px; margin-top: 10px; margin-bottom: 15px; }
+#wp-calendar thead { font-size: 10px; }
+#wp-calendar thead th { padding-bottom: 10px; }
+#wp-calendar tbody { color: #aaa; }
+#wp-calendar tbody td { background: #f5f5f5; border: 1px solid #fff; text-align: center; padding:1%;}
+#wp-calendar tbody td:hover { background: #fff; }
+#wp-calendar tbody .pad { background: none; }
+#wp-calendar tfoot #next { font-size: 10px; text-transform: uppercase; text-align: right; }
+#wp-calendar tfoot #prev { font-size: 10px; text-transform: uppercase; padding-top: 10px; }
+#wp-calendar a:link,
+#wp-calendar a:visited {color: #333;}
+#wp-calendar a:hover {color: #aaa;}
+
+
+	/*Social Media Menu*/
+.social-menu ul{
+	margin: 0 auto; display: inline-block;
+	padding-left: 0;
+	text-align: center;
+	width: 100%;
+}
+
+.social-menu li{	
+}
+
+#menu-social-media-links li a:link,
+#menu-social-media-links li a:visited{
+	font-size: 1.25em;
+	padding: 5px 0;
+	margin: 15px 0;
+	color: #eee;
+	width: 100%;
+	display: block;
+	background-color: #333;
+}
+
+#menu-social-media-links li a:hover{
+	color: #999;
+}
+
+/* Footer Widget Area */
+.footer-widget-area {
+	width: 25%;
+	float: left;
+	padding-right: 40px;
+	box-sizing: border-box;
+}
+
+/* Footer */
+.site-footer{
+	border-top: 2px solid #999;
+	margin-top: 30px;
+}
+
+/* Navigation Menus */
+.site-nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+.site-nav ul:before, .site-nav ul:after{ content: ""; display: table;}
+.site-nav ul:after { clear: both;}
+.site-nav ul {*zoom: 1;}
+
+.site-nav ul li {
+	list-style: none;
+}
+
+/* Footer Menu */
+.site-footer nav ul li {
+	float: left;
+	margin-right: 10px;
+	padding: 5px 10px 5px 0;
+	border-right: 1px dotted #bbb;
+}
+
+/* Page Layout */
+article.page h2 {
+	font-size: 300%;
+}
+
+/* Clearfix */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+/* Info Box Styles */
+div.info-box {
+	width: 30%;
+	float: right;
+	margin: 0 0 30px 30px;
+	padding: 20px;
+	background-color: #eee;
+}
+
+div.info-box h4 {
+	margin-bottom: 6px;
+}
+
+div.info-box p {
+	font-size: 85%;
+}
+
+/* Children Links */
+.children-links {
+	margin: 20px 0;
+	font-size: 80%;
+}
+
+.children-links a:link,
+.children-links a:visited {
+	text-decoration: none;
+}
+
+.children-links .current_page_item a:link,
+.children-links .current_page_item a:visited {
+	border-bottom: 1px solid #ddd;
+	font-weight: bold;
+	cursor: default;
+}
+
+.children-links ul {
+	float: left;
+}
+
+.children-links li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.children-links .parent-link {
+	float: left;
+	margin-right: 20px;
+	padding-right: 20px;
+	border-right: 1px solid #ddd;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+/* Post Info Styles */
+.post h2 {
+	font-size: 200%;
+	margin-bottom: 10px;
+}
+
+.post h2 a:link,
+.post h2 a:visited {
+	text-decoration: none;
+}
+
+p.post-info {
+	margin-top: 0;
+	font-size: 87%;
+	color: #999;
+}
+
+p.post-info a:link,
+p.post-info a:visited {
+	color: #999;
+}
+
+/*Front Page Excerpt Styles */
+.excerpt a:link,
+.excerpt a:visited{
+	color: #999;
+}
+
+/* Image Styles */
+img {
+	max-width: 100%;
+	height: auto;
+}
